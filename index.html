@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your 2021 Todo-List</title>
+
+  <!-------------------- Google font --------------->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  
+
+  <!--------------------FontAwesome CDN----------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-------------------- Custom CSS --------------->
+  <link rel="stylesheet" href="Asset/CSS/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+  
+    <div class="container">
+      <header>
+        <h1 class="h1">Your Todo list</h1>
+      </header>
+      <div class="card">
+        <div class="card-body">
+          <form action="" id="todoForm" class="todo-form">
+            <header>
+              <h2 class="h2">New Todo</h2>
+            </header>
+            <div class="form-group">
+              <label for="todo"></label>
+              <input type="text" class="todo" name="todo" placeholder="Enter Todo">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Add Task">
+          </form>
+        </div>
+        <div class="card-action">
+          <h2 class="h2">Task</h2>
+          <ul class="todo-list"></ul>
+          <button class="btn btn-secondary clear-todo">Clear Task</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="Asset/JS/app.js"></script>
+
+</body>
+</html>

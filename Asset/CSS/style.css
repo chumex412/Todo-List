@@ -1,0 +1,195 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Page Styling */
+
+:root {
+  --base-font: 1rem;
+  --type-scale: 1.25;
+  --paragragph: calc(var(--base-font) * var(--type-scale));
+  --button: calc(var(--base-font) * var(--type-scale));
+  --h2: calc(var(--button) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Pacifico', cursive;
+  background-image: url(../Image/pexels-polina-kovaleva-5717479__mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Utilities */
+
+.h1 {font-size: var(--h1);}
+
+.h2 {font-size: var(--h2);}
+
+.text-danger {color: rgb(255, 0, 0);}
+
+/* Main styling */
+
+.wrapper {
+  padding-bottom: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.card {
+  width: 85%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);;
+  box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.8),
+              -2px -2px 10px rgba(153, 153, 153, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+  backdrop-filter: blur(5px);
+}
+
+.card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card-action {
+  margin-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.todo {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+}
+
+.todo:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  color: #fff;
+  font-size: var(--button);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #5d45e4;
+}
+
+.btn-primary:hover {
+  background-color: #5d45a5;
+}
+
+.btn-secondary {
+  background-color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+.todo-item {
+  position: relative;
+  font-size: var(--paragragph);
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  background-color: #333;
+  color: #fff;
+}
+
+.todo-item:nth-child(even) {
+  background-color: #ddd;
+  color: #000;
+}
+
+.secondary-content {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.delete {
+  font-size: 1rem;
+  color: red;
+}
+
+.clear-todo {
+  margin-top: 4rem;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --type-scale: 1.35;
+  }
+} 
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../Image/pexels-polina-kovaleva-5717479.jpg);
+  }
+
+  .container {
+    max-width: 80%;
+  }
+
+  .card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 987px) {
+  :root {
+    --type-scale: 1.45;
+  }
+} 
+
+@media (min-width: 1200px) {
+  :root {
+    --type-scale: 1.6;
+  }
+} 
